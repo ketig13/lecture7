@@ -10,8 +10,8 @@ div{
 	width: 100px;
 	height: 70px;
 	position: relative;
-	left: 90%;
-	top: 10%;
+	left: 1060px;
+	top: 0;
 	animation-name: swim;
 	animation-duration: 4s;
 	animation-direction: alternate;
@@ -35,11 +35,11 @@ div{
 
 @keyframes swim2 {
   0%   {left: 0px; top: 0px;}
-  25%  {left: 800px; top: 0px;}
-  50%  {left: 800px; top: 400px;}
-  75%  {left: 0px; top: 400px;}
+  25%  {left: 900px; top: 300px;}
+  50%  {left: 0px; top: 300px;}
+  75%  {left: 800px; top: 0px;}
   100% {left: 0px; top: 0px;}
-}
+ }
 
 .octopus{
 	width: 200px;
@@ -55,30 +55,42 @@ div{
 
 @keyframes swim3 {
   0%   {left: 0px; top: 0px;}
-  25%  {left: 900px; top: 300px;}
-  50%  {left: 0px; top: 300px;}
-  75%  {left: 800px; top: 0px;}
+  25%  {left: 800px; top: 0px;}
+  50%  {left: 800px; top: 300px;}
+  75%  {left: 0px; top: 300px;}
   100% {left: 0px; top: 0px;}
+}
+
+.rock{
+	width: 50px;
+	height: 70px;
+	position: relative;
+	top: 300px;
+	left: 300px;
+	animation-name: rockmove;
+	animation-duration: 7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rockmove {
+  0%   {left: 300px; top: 300px;}
+  100% {left: 300px; top: 0px;}
 }
 
 .rock2{
 	width: 300px;
 	height: 480px;
 	position: relative;
-	left: 55%;
-	top: 50%;
+	left: 600px;
+	top: 400px;
+
 	transition-delay: 1s;
 	transition-duration: 3s;
-	transition-property: all;
-}
+	transition-property: ;
+	transition-timing-function: ;
 }
 .rock2:hover{
-	transform: rotate(30deg);
+	transform: rotate(45deg);
 	cursor: pointer;
-}
-.rock{
-	width: 50px;
-	height: 70px;
-	position: absolute;
-	
 }
