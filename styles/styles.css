@@ -1,5 +1,84 @@
 div{
-	background-image: url(../images/bphoto.jpg);
+	background-image: url("../images/background.jpg");
 	width: 100%;
 	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.fish1{
+	width: 100px;
+	height: 70px;
+	position: relative;
+	left: 90%;
+	top: 10%;
+	animation-name: swim;
+	animation-duration: 4s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes swim {
+  from {left: 1060px;}
+  to {left: 0px;}
+}
+
+.fish2{
+	width: 110px;
+	height: 160px;
+    position: relative;
+    animation-name: swim2;
+    animation-duration: 9s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes swim2 {
+  0%   {left: 0px; top: 0px;}
+  25%  {left: 800px; top: 0px;}
+  50%  {left: 800px; top: 400px;}
+  75%  {left: 0px; top: 400px;}
+  100% {left: 0px; top: 0px;}
+}
+
+.octopus{
+	width: 200px;
+	height: 150px;
+	position: relative;
+	top: 80px;
+	left: 80px;
+	animation-name: swim3;
+	animation-duration: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes swim3 {
+  0%   {left: 0px; top: 0px;}
+  25%  {left: 900px; top: 300px;}
+  50%  {left: 0px; top: 300px;}
+  75%  {left: 800px; top: 0px;}
+  100% {left: 0px; top: 0px;}
+}
+
+.rock2{
+	width: 300px;
+	height: 480px;
+	position: relative;
+	left: 55%;
+	top: 50%;
+	transition-delay: 1s;
+	transition-duration: 3s;
+	transition-property: all;
+}
+}
+.rock2:hover{
+	transform: rotate(30deg);
+	cursor: pointer;
+}
+.rock{
+	width: 50px;
+	height: 70px;
+	position: absolute;
+	
 }
